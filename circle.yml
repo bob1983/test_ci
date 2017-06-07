@@ -1,0 +1,15 @@
+machine:
+ timezone:
+  Asia/Tokyo
+ hosts:
+  dev.ibiza.jp: 127.0.0.1
+ ruby:
+  version: 2.4.1
+
+dependencies:
+  override:
+    - bundle install:
+      timeout: 300
+test:
+  override:
+    - bundle exec rake test
