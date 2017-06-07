@@ -1,3 +1,6 @@
+require 'dotenv'
+Dotenv.load(".env.production")
+
 $worker  = 2
 $timeout = 30
 $app_dir = "/var/www/test_ci/current"
